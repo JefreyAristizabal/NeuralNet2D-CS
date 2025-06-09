@@ -1,33 +1,77 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNet\\",
+  "WorkspaceRootPath": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNetProject\\NeuralNet\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F3FB593D-9207-4CF1-847D-0455CE076C3A}|..\\NeuralNetRunner\\NeuralNetRunner.csproj|c:\\users\\pc master\\documents\\another_backup\\neuralnetrunner\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F3FB593D-9207-4CF1-847D-0455CE076C3A}|..\\NeuralNetRunner\\NeuralNetRunner.csproj|c:\\users\\pc master\\documents\\another_backup\\neuralnetproject\\neuralnetrunner\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB844068-3855-4AFE-AFF5-BE2CD5E14181}|NeuralNet.csproj|c:\\users\\pc master\\documents\\another_backup\\neuralnet\\neuralnetwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FB844068-3855-4AFE-AFF5-BE2CD5E14181}|NeuralNet.csproj|c:\\users\\pc master\\documents\\another_backup\\neuralnetproject\\neuralnet\\neuralnetwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FB844068-3855-4AFE-AFF5-BE2CD5E14181}|NeuralNet.csproj|solutionrelative:neuralnetwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB844068-3855-4AFE-AFF5-BE2CD5E14181}|NeuralNet.csproj|c:\\users\\pc master\\documents\\another_backup\\neuralnet\\matrix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FB844068-3855-4AFE-AFF5-BE2CD5E14181}|NeuralNet.csproj|c:\\users\\pc master\\documents\\another_backup\\neuralnetproject\\neuralnet\\adamoptimizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB844068-3855-4AFE-AFF5-BE2CD5E14181}|NeuralNet.csproj|solutionrelative:adamoptimizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB844068-3855-4AFE-AFF5-BE2CD5E14181}|NeuralNet.csproj|c:\\users\\pc master\\documents\\another_backup\\neuralnetproject\\neuralnet\\sgd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB844068-3855-4AFE-AFF5-BE2CD5E14181}|NeuralNet.csproj|solutionrelative:sgd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB844068-3855-4AFE-AFF5-BE2CD5E14181}|NeuralNet.csproj|c:\\users\\pc master\\documents\\another_backup\\neuralnetproject\\neuralnet\\ioptimizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB844068-3855-4AFE-AFF5-BE2CD5E14181}|NeuralNet.csproj|solutionrelative:ioptimizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB844068-3855-4AFE-AFF5-BE2CD5E14181}|NeuralNet.csproj|c:\\users\\pc master\\documents\\another_backup\\neuralnetproject\\neuralnet\\matrix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FB844068-3855-4AFE-AFF5-BE2CD5E14181}|NeuralNet.csproj|solutionrelative:matrix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB844068-3855-4AFE-AFF5-BE2CD5E14181}|NeuralNet.csproj|c:\\users\\pc master\\documents\\another_backup\\neuralnet\\lossfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FB844068-3855-4AFE-AFF5-BE2CD5E14181}|NeuralNet.csproj|c:\\users\\pc master\\documents\\another_backup\\neuralnetproject\\neuralnet\\meansquarederror.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB844068-3855-4AFE-AFF5-BE2CD5E14181}|NeuralNet.csproj|solutionrelative:meansquarederror.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB844068-3855-4AFE-AFF5-BE2CD5E14181}|NeuralNet.csproj|c:\\users\\pc master\\documents\\another_backup\\neuralnetproject\\neuralnet\\binarycrossentropy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB844068-3855-4AFE-AFF5-BE2CD5E14181}|NeuralNet.csproj|solutionrelative:binarycrossentropy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB844068-3855-4AFE-AFF5-BE2CD5E14181}|NeuralNet.csproj|c:\\users\\pc master\\documents\\another_backup\\neuralnetproject\\neuralnet\\iloss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB844068-3855-4AFE-AFF5-BE2CD5E14181}|NeuralNet.csproj|solutionrelative:iloss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB844068-3855-4AFE-AFF5-BE2CD5E14181}|NeuralNet.csproj|c:\\users\\pc master\\documents\\another_backup\\neuralnetproject\\neuralnet\\activationtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB844068-3855-4AFE-AFF5-BE2CD5E14181}|NeuralNet.csproj|solutionrelative:activationtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB844068-3855-4AFE-AFF5-BE2CD5E14181}|NeuralNet.csproj|c:\\users\\pc master\\documents\\another_backup\\neuralnetproject\\neuralnet\\activationfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB844068-3855-4AFE-AFF5-BE2CD5E14181}|NeuralNet.csproj|solutionrelative:activationfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB844068-3855-4AFE-AFF5-BE2CD5E14181}|NeuralNet.csproj|c:\\users\\pc master\\documents\\another_backup\\neuralnetproject\\neuralnet\\metrics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB844068-3855-4AFE-AFF5-BE2CD5E14181}|NeuralNet.csproj|solutionrelative:metrics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB844068-3855-4AFE-AFF5-BE2CD5E14181}|NeuralNet.csproj|c:\\users\\pc master\\documents\\another_backup\\neuralnetproject\\neuralnet\\lossfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FB844068-3855-4AFE-AFF5-BE2CD5E14181}|NeuralNet.csproj|solutionrelative:lossfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB844068-3855-4AFE-AFF5-BE2CD5E14181}|NeuralNet.csproj|c:\\users\\pc master\\documents\\another_backup\\neuralnet\\layer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FB844068-3855-4AFE-AFF5-BE2CD5E14181}|NeuralNet.csproj|c:\\users\\pc master\\documents\\another_backup\\neuralnetproject\\neuralnet\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB844068-3855-4AFE-AFF5-BE2CD5E14181}|NeuralNet.csproj|solutionrelative:extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB844068-3855-4AFE-AFF5-BE2CD5E14181}|NeuralNet.csproj|c:\\users\\pc master\\documents\\another_backup\\neuralnetproject\\neuralnet\\layer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FB844068-3855-4AFE-AFF5-BE2CD5E14181}|NeuralNet.csproj|solutionrelative:layer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB844068-3855-4AFE-AFF5-BE2CD5E14181}|NeuralNet.csproj|c:\\users\\pc master\\documents\\another_backup\\neuralnet\\dataset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB844068-3855-4AFE-AFF5-BE2CD5E14181}|NeuralNet.csproj|solutionrelative:dataset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FB844068-3855-4AFE-AFF5-BE2CD5E14181}|NeuralNet.csproj|c:\\users\\pc master\\documents\\another_backup\\neuralnetproject\\neuralnet\\exporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB844068-3855-4AFE-AFF5-BE2CD5E14181}|NeuralNet.csproj|solutionrelative:exporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB844068-3855-4AFE-AFF5-BE2CD5E14181}|NeuralNet.csproj|c:\\users\\pc master\\documents\\another_backup\\neuralnet\\activationfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB844068-3855-4AFE-AFF5-BE2CD5E14181}|NeuralNet.csproj|solutionrelative:activationfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FB844068-3855-4AFE-AFF5-BE2CD5E14181}|NeuralNet.csproj|c:\\users\\pc master\\documents\\another_backup\\neuralnetproject\\neuralnet\\dataset2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB844068-3855-4AFE-AFF5-BE2CD5E14181}|NeuralNet.csproj|solutionrelative:dataset2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB844068-3855-4AFE-AFF5-BE2CD5E14181}|NeuralNet.csproj|c:\\users\\pc master\\documents\\another_backup\\neuralnetproject\\neuralnet\\dataset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB844068-3855-4AFE-AFF5-BE2CD5E14181}|NeuralNet.csproj|solutionrelative:dataset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -37,101 +81,240 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IOptimizer.cs",
+              "DocumentMoniker": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNetProject\\NeuralNet\\IOptimizer.cs",
+              "RelativeDocumentMoniker": "IOptimizer.cs",
+              "ToolTip": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNetProject\\NeuralNet\\IOptimizer.cs",
+              "RelativeToolTip": "IOptimizer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T23:05:43.374Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNetRunner\\Program.cs",
-              "RelativeDocumentMoniker": "..\\NeuralNetRunner\\Program.cs",
-              "ToolTip": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNetRunner\\Program.cs",
-              "RelativeToolTip": "..\\NeuralNetRunner\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "SGD.cs",
+              "DocumentMoniker": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNetProject\\NeuralNet\\SGD.cs",
+              "RelativeDocumentMoniker": "SGD.cs",
+              "ToolTip": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNetProject\\NeuralNet\\SGD.cs",
+              "RelativeToolTip": "SGD.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAwwBgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T01:49:45.087Z",
+              "WhenOpened": "2025-06-08T23:03:44.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MeanSquaredError.cs",
+              "DocumentMoniker": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNetProject\\NeuralNet\\MeanSquaredError.cs",
+              "RelativeDocumentMoniker": "MeanSquaredError.cs",
+              "ToolTip": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNetProject\\NeuralNet\\MeanSquaredError.cs",
+              "RelativeToolTip": "MeanSquaredError.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAgwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T23:02:54.961Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Dataset.cs",
-              "DocumentMoniker": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNet\\Dataset.cs",
-              "RelativeDocumentMoniker": "Dataset.cs",
-              "ToolTip": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNet\\Dataset.cs",
-              "RelativeToolTip": "Dataset.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAwwB8AAAABAAAAAAAAAA==",
+              "Title": "Matrix.cs",
+              "DocumentMoniker": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNetProject\\NeuralNet\\Matrix.cs",
+              "RelativeDocumentMoniker": "Matrix.cs",
+              "ToolTip": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNetProject\\NeuralNet\\Matrix.cs",
+              "RelativeToolTip": "Matrix.cs",
+              "ViewState": "AgIAAJsAAAAAAAAAAAAgwLIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T01:36:19.694Z",
+              "WhenOpened": "2025-06-08T19:06:10.712Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "NeuralNetwork.cs",
-              "DocumentMoniker": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNet\\NeuralNetwork.cs",
+              "DocumentMoniker": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNetProject\\NeuralNet\\NeuralNetwork.cs",
               "RelativeDocumentMoniker": "NeuralNetwork.cs",
-              "ToolTip": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNet\\NeuralNetwork.cs",
+              "ToolTip": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNetProject\\NeuralNet\\NeuralNetwork.cs",
               "RelativeToolTip": "NeuralNetwork.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAgwFgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T01:35:46.04Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LossFunction.cs",
-              "DocumentMoniker": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNet\\LossFunction.cs",
-              "RelativeDocumentMoniker": "LossFunction.cs",
-              "ToolTip": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNet\\LossFunction.cs",
-              "RelativeToolTip": "LossFunction.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAA1wCIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T01:34:49.976Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ActivationFunction.cs",
-              "DocumentMoniker": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNet\\ActivationFunction.cs",
-              "RelativeDocumentMoniker": "ActivationFunction.cs",
-              "ToolTip": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNet\\ActivationFunction.cs",
-              "RelativeToolTip": "ActivationFunction.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAywCIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T01:34:29.764Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Layer.cs",
-              "DocumentMoniker": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNet\\Layer.cs",
-              "RelativeDocumentMoniker": "Layer.cs",
-              "ToolTip": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNet\\Layer.cs",
-              "RelativeToolTip": "Layer.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAwEwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T01:33:59.405Z",
+              "WhenOpened": "2025-06-08T15:10:10.32Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Matrix.cs",
-              "DocumentMoniker": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNet\\Matrix.cs",
-              "RelativeDocumentMoniker": "Matrix.cs",
-              "ToolTip": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNet\\Matrix.cs",
-              "RelativeToolTip": "Matrix.cs",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAqwF0AAAAuAAAAAAAAAA==",
+              "Title": "AdamOptimizer.cs",
+              "DocumentMoniker": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNetProject\\NeuralNet\\AdamOptimizer.cs",
+              "RelativeDocumentMoniker": "AdamOptimizer.cs",
+              "ToolTip": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNetProject\\NeuralNet\\AdamOptimizer.cs",
+              "RelativeToolTip": "AdamOptimizer.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAgwEkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T01:31:57.94Z",
+              "WhenOpened": "2025-06-08T18:00:41.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNetProject\\NeuralNetRunner\\Program.cs",
+              "RelativeDocumentMoniker": "..\\NeuralNetRunner\\Program.cs",
+              "ToolTip": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNetProject\\NeuralNetRunner\\Program.cs",
+              "RelativeToolTip": "..\\NeuralNetRunner\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T15:06:07.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BinaryCrossEntropy.cs",
+              "DocumentMoniker": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNetProject\\NeuralNet\\BinaryCrossEntropy.cs",
+              "RelativeDocumentMoniker": "BinaryCrossEntropy.cs",
+              "ToolTip": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNetProject\\NeuralNet\\BinaryCrossEntropy.cs",
+              "RelativeToolTip": "BinaryCrossEntropy.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAgwCsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T23:03:21.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ILoss.cs",
+              "DocumentMoniker": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNetProject\\NeuralNet\\ILoss.cs",
+              "RelativeDocumentMoniker": "ILoss.cs",
+              "ToolTip": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNetProject\\NeuralNet\\ILoss.cs",
+              "RelativeToolTip": "ILoss.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T23:02:28.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ActivationType.cs",
+              "DocumentMoniker": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNetProject\\NeuralNet\\ActivationType.cs",
+              "RelativeDocumentMoniker": "ActivationType.cs",
+              "ToolTip": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNetProject\\NeuralNet\\ActivationType.cs",
+              "RelativeToolTip": "ActivationType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T23:01:55.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ActivationFunction.cs",
+              "DocumentMoniker": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNetProject\\NeuralNet\\ActivationFunction.cs",
+              "RelativeDocumentMoniker": "ActivationFunction.cs",
+              "ToolTip": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNetProject\\NeuralNet\\ActivationFunction.cs",
+              "RelativeToolTip": "ActivationFunction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAswEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T20:41:19.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Metrics.cs",
+              "DocumentMoniker": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNetProject\\NeuralNet\\Metrics.cs",
+              "RelativeDocumentMoniker": "Metrics.cs",
+              "ToolTip": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNetProject\\NeuralNet\\Metrics.cs",
+              "RelativeToolTip": "Metrics.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T17:53:19.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Extensions.cs",
+              "DocumentMoniker": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNetProject\\NeuralNet\\Extensions.cs",
+              "RelativeDocumentMoniker": "Extensions.cs",
+              "ToolTip": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNetProject\\NeuralNet\\Extensions.cs",
+              "RelativeToolTip": "Extensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T19:53:32.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LossFunction.cs",
+              "DocumentMoniker": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNetProject\\NeuralNet\\LossFunction.cs",
+              "RelativeDocumentMoniker": "LossFunction.cs",
+              "ToolTip": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNetProject\\NeuralNet\\LossFunction.cs",
+              "RelativeToolTip": "LossFunction.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAAAEMAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T20:42:08.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Layer.cs",
+              "DocumentMoniker": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNetProject\\NeuralNet\\Layer.cs",
+              "RelativeDocumentMoniker": "Layer.cs",
+              "ToolTip": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNetProject\\NeuralNet\\Layer.cs",
+              "RelativeToolTip": "Layer.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAgwHoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T15:09:25.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Exporter.cs",
+              "DocumentMoniker": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNetProject\\NeuralNet\\Exporter.cs",
+              "RelativeDocumentMoniker": "Exporter.cs",
+              "ToolTip": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNetProject\\NeuralNet\\Exporter.cs",
+              "RelativeToolTip": "Exporter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T15:50:20.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Dataset2D.cs",
+              "DocumentMoniker": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNetProject\\NeuralNet\\Dataset2D.cs",
+              "RelativeDocumentMoniker": "Dataset2D.cs",
+              "ToolTip": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNetProject\\NeuralNet\\Dataset2D.cs",
+              "RelativeToolTip": "Dataset2D.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAgwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T15:48:32.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Dataset.cs",
+              "DocumentMoniker": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNetProject\\NeuralNet\\Dataset.cs",
+              "RelativeDocumentMoniker": "Dataset.cs",
+              "ToolTip": "C:\\Users\\PC Master\\Documents\\Another_backup\\NeuralNetProject\\NeuralNet\\Dataset.cs",
+              "RelativeToolTip": "Dataset.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T22:34:53.799Z",
               "EditorCaption": ""
             }
           ]

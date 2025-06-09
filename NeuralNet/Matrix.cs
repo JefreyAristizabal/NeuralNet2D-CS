@@ -4,132 +4,175 @@ namespace NeuralNet
 {
     public class Matrix
     {
-        public int Rows { get; }
-        public int Cols { get; }
-        public double[,] Data;
+        private readonly double[,] data;
 
-        private static readonly Random Rand = new Random();
+        public int Rows => data.GetLength(0);
+        public int Cols => data.GetLength(1);
+        public int Columns => Cols;
 
         public Matrix(int rows, int cols)
         {
-            Rows = rows;
-            Cols = cols;
-            Data = new double[rows, cols];
-            Randomize();
+            if (rows <= 0 || cols <= 0)
+                throw new ArgumentException("Rows and Cols must be > 0.");
+            data = new double[rows, cols];
         }
 
-        public void Randomize()
+        public double this[int i, int j]
         {
-            for (int i = 0; i < Rows; i++)
-                for (int j = 0; j < Cols; j++)
-                    Data[i, j] = Rand.NextDouble() * 2 - 1; // [-1, 1]
+            get => data[i, j];
+            set
+            {
+                if (double.IsNaN(value) || double.IsInfinity(value))
+                    throw new ArgumentException($"Invalid matrix value at [{i},{j}]: {value}");
+                data[i, j] = value;
+            }
         }
 
         public static Matrix FromArray(double[] arr)
         {
-            Matrix m = new Matrix(arr.Length, 1);
-            for (int i = 0; i < arr.Length; i++)
-                m.Data[i, 0] = arr[i];
+            var m = new Matrix(arr.Length, 1);
+            for (int i = 0; i < arr.Length; i++) m[i, 0] = arr[i];
             return m;
         }
 
         public double[] ToArray()
         {
-            double[] arr = new double[Rows];
-            for (int i = 0; i < Rows; i++)
-                arr[i] = Data[i, 0];
-            return arr;
-        }
-
-        public static Matrix Dot(Matrix a, Matrix b)
-        {
-            if (a.Cols != b.Rows)
-                throw new Exception("Incompatible dimensions for dot product.");
-            Matrix result = new Matrix(a.Rows, b.Cols);
-            for (int i = 0; i < result.Rows; i++)
-                for (int j = 0; j < result.Cols; j++)
-                    for (int k = 0; k < a.Cols; k++)
-                        result.Data[i, j] += a.Data[i, k] * b.Data[k, j];
-            return result;
-        }
-
-        public void Add(Matrix other)
-        {
-            if (Rows != other.Rows || Cols != other.Cols)
-                throw new Exception("Matrix dimensions must match for addition.");
+            var result = new double[Rows * Cols];
+            int idx = 0;
             for (int i = 0; i < Rows; i++)
                 for (int j = 0; j < Cols; j++)
-                    Data[i, j] += other.Data[i, j];
-        }
-
-        public void Add(double scalar)
-        {
-            for (int i = 0; i < Rows; i++)
-                for (int j = 0; j < Cols; j++)
-                    Data[i, j] += scalar;
-        }
-
-        public void Map(Func<double, double> func)
-        {
-            for (int i = 0; i < Rows; i++)
-                for (int j = 0; j < Cols; j++)
-                    Data[i, j] = func(Data[i, j]);
-        }
-
-        public static Matrix Map(Matrix m, Func<double, double> func)
-        {
-            Matrix result = new Matrix(m.Rows, m.Cols);
-            for (int i = 0; i < m.Rows; i++)
-                for (int j = 0; j < m.Cols; j++)
-                    result.Data[i, j] = func(m.Data[i, j]);
-            return result;
-        }
-
-        public void Multiply(Matrix m)
-        {
-            if (Rows != m.Rows || Cols != m.Cols)
-                throw new Exception("Las dimensiones deben coincidir para multiplicación elemento a elemento.");
-
-            for (int i = 0; i < Rows; i++)
-                for (int j = 0; j < Cols; j++)
-                    Data[i, j] *= m.Data[i, j];
-        }
-
-        // ✅ Método faltante para multiplicar por un escalar
-        public void Multiply(double scalar)
-        {
-            for (int i = 0; i < Rows; i++)
-                for (int j = 0; j < Cols; j++)
-                    Data[i, j] *= scalar;
-        }
-
-        public static Matrix Transpose(Matrix m)
-        {
-            Matrix result = new Matrix(m.Cols, m.Rows);
-            for (int i = 0; i < m.Rows; i++)
-                for (int j = 0; j < m.Cols; j++)
-                    result.Data[j, i] = m.Data[i, j];
-            return result;
-        }
-
-        public static Matrix Subtract(Matrix a, Matrix b)
-        {
-            if (a.Rows != b.Rows || a.Cols != b.Cols)
-                throw new Exception("Matrix dimensions must match for subtraction.");
-            Matrix result = new Matrix(a.Rows, a.Cols);
-            for (int i = 0; i < a.Rows; i++)
-                for (int j = 0; j < a.Cols; j++)
-                    result.Data[i, j] = a.Data[i, j] - b.Data[i, j];
+                    result[idx++] = data[i, j];
             return result;
         }
 
         public Matrix Copy()
         {
-            Matrix copy = new Matrix(Rows, Cols);
+            var m = new Matrix(Rows, Cols);
+            Array.Copy(data, m.data, data.Length);
+            return m;
+        }
+
+        public static Matrix Random(int rows, int cols, double min = -1, double max = 1)
+        {
+            var rand = new Random();
+            var m = new Matrix(rows, cols);
+            for (int i = 0; i < rows; i++)
+                for (int j = 0; j < cols; j++)
+                    m[i, j] = min + (max - min) * rand.NextDouble();
+            return m;
+        }
+
+        public static Matrix Random(int rows, int cols, double stdDev)
+            => Random(rows, cols, -stdDev, stdDev);
+
+        public static Matrix Dot(Matrix a, Matrix b)
+        {
+            if (a.Cols != b.Rows)
+                throw new ArgumentException("Incompatible dims for Dot");
+            var m = new Matrix(a.Rows, b.Cols);
+            for (int i = 0; i < m.Rows; i++)
+                for (int j = 0; j < m.Cols; j++)
+                    for (int k = 0; k < a.Cols; k++)
+                        m[i, j] += a[i, k] * b[k, j];
+            return m;
+        }
+
+        public Matrix Transpose()
+            => Transpose(this);
+
+        public static Matrix Transpose(Matrix a)
+        {
+            var m = new Matrix(a.Cols, a.Rows);
+            for (int i = 0; i < a.Rows; i++)
+                for (int j = 0; j < a.Cols; j++)
+                    m[j, i] = a[i, j];
+            return m;
+        }
+
+        public static Matrix Hadamard(Matrix a, Matrix b)
+        {
+            if (a.Rows != b.Rows || a.Cols != b.Cols)
+                throw new ArgumentException("Dim mismatch for Hadamard");
+            var m = new Matrix(a.Rows, a.Cols);
+            for (int i = 0; i < m.Rows; i++)
+                for (int j = 0; j < m.Cols; j++)
+                    m[i, j] = a[i, j] * b[i, j];
+            return m;
+        }
+
+        public void Map(Func<double, double> f)
+        {
             for (int i = 0; i < Rows; i++)
                 for (int j = 0; j < Cols; j++)
-                    copy.Data[i, j] = Data[i, j];
-            return copy;
+                    this[i, j] = f(this[i, j]);
+        }
+
+        public static Matrix Map(Matrix a, Func<double, double> f)
+        {
+            var m = a.Copy();
+            m.Map(f);
+            return m;
+        }
+
+        public void Add(Matrix b)
+        {
+            if (Rows != b.Rows || Cols != b.Cols) throw new ArgumentException("Dim mismatch for Add");
+            for (int i = 0; i < Rows; i++)
+                for (int j = 0; j < Cols; j++)
+                    this[i, j] += b[i, j];
+        }
+
+        public void AddScaled(Matrix b, double scale)
+        {
+            if (Rows != b.Rows || Cols != b.Cols) throw new ArgumentException("Dim mismatch for AddScaled");
+            for (int i = 0; i < Rows; i++)
+                for (int j = 0; j < Cols; j++)
+                    this[i, j] += b[i, j] * scale;
+        }
+
+        public void ClipByNorm(double clipNorm)
+        {
+            double sum = 0;
+            for (int i = 0; i < Rows; i++)
+                for (int j = 0; j < Cols; j++)
+                    sum += data[i, j] * data[i, j];
+            double norm = Math.Sqrt(sum);
+            if (norm > clipNorm && norm > 1e-8)
+            {
+                double scale = clipNorm / norm;
+                for (int i = 0; i < Rows; i++)
+                    for (int j = 0; j < Cols; j++)
+                        data[i, j] *= scale;
+            }
+        }
+
+        public static Matrix ApplyFunction(Matrix a, Matrix b, Func<double, double, double> func)
+        {
+            if (a.Rows != b.Rows || a.Cols != b.Cols) throw new ArgumentException("Dim mismatch in ApplyFunction");
+            var m = new Matrix(a.Rows, a.Cols);
+            for (int i = 0; i < a.Rows; i++)
+                for (int j = 0; j < a.Cols; j++)
+                    m[i, j] = func(a[i, j], b[i, j]);
+            return m;
+        }
+
+        public double Average()
+        {
+            double sum = 0;
+            int count = Rows * Cols;
+            for (int i = 0; i < Rows; i++)
+                for (int j = 0; j < Cols; j++)
+                    sum += data[i, j];
+            return sum / count;
+        }
+
+        public bool HasNaN()
+        {
+            for (int i = 0; i < Rows; i++)
+                for (int j = 0; j < Cols; j++)
+                    if (double.IsNaN(data[i, j]) || double.IsInfinity(data[i, j]))
+                        return true;
+            return false;
         }
     }
 }
